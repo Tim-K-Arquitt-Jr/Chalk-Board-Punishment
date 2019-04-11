@@ -8,7 +8,7 @@
 
 import UIKit
 
-var sliderCount = 0
+
 var userText: String = " "
 
 
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderNumberDisplay: UILabel!
     @IBOutlet weak var wordDisplay: UILabel!
    
+    @IBOutlet weak var slideOutlet: UISlider!
     
     
     
@@ -47,9 +48,11 @@ class ViewController: UIViewController {
     
 @IBAction func sliderButtonPressed(_ sender: Any) {
     
-    sliderNumberDisplay.text = String(Int(sliderNumberDisplay.value))
+    sliderNumberDisplay.text = String(Int(slideOutlet.value))
     
 }
+    
+    
     
     
 }
