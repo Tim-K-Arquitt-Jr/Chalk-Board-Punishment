@@ -36,7 +36,17 @@ class ViewController: UIViewController {
     
         userText = textInputField.text!
         
-        wordDisplay.text = userText + String(Int(slideOutlet.value))
+        wordDisplay.text = userText
+        
+        
+        
+    
+            if slideOutlet.value > 0.0 && textInputField.text != nil {
+                for _ in 1...Int(slideOutlet.value) {
+                    wordDisplay.text! += String(textInputField.text!) + "\n"
+                }
+            }
+        
     
     
     }
