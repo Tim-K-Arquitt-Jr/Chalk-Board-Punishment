@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
         userText = textInputField.text!
         
-        wordDisplay.text = userText
+        wordDisplay.text = userText + String(Int(slideOutlet.value))
     
     
     }
@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     sliderNumberDisplay.text = String(Int(slideOutlet.value))
     
 }
+    
+
     
     
     
