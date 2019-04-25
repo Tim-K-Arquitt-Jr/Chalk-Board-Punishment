@@ -9,7 +9,7 @@
 import UIKit
 
 
-var userText: String = " "
+var userText: String = "gagaga"
 
 
 
